@@ -1,0 +1,116 @@
+@import './base/variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+
+// Header
+
+.logo {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-size: 90px;
+    font-style: italic;
+    letter-spacing: 10px;
+
+    position: absolute;
+    top: 58px;
+    left: 194px
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1920px;
+    height: 100vh;
+    background: $color-primary;
+}
+
+.heading_main {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    width: 100%;
+}
+
+.heading_img_hand {
+    width: 438px;
+    height: 610px;
+
+    position: absolute;
+    bottom: 133px;
+    left: 50%;
+
+    z-index: 3;
+    transform: translate(-50%);
+
+    border-radius: 228px 228px 0 0;
+}
+
+@media (max-width: 1700px) {
+    .heading_img_hand {
+        bottom: 80px;
+        width: 350px;
+        height: 500px;
+    }
+}
+
+.nail_img {
+    width: 600px;
+    height: 400px;
+    background: url(../img/head/nail_bg.png) no-repeat center/cover;
+    position: absolute;
+    left: 30px;
+    top: 200px;
+
+    &::after {
+        content: url(../img/head/nail.png);
+        margin-left: 120px;
+    }
+}
+
+
+.main_img {
+    width: 50%;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+
+    z-index: 2;
+}
+
+
+
+.lorem {
+    display: flex;
+    align-items: center;
+    height: 180px;
+    background: $color-accent;
+    width: 100%;
+    margin-left: 146px;
+    z-index: 1;
+    // bottom: -80px;
+    position: absolute;
+    bottom: 0;
+}
+
+.lorem_text {
+    width: 300px;
+    text-align: center;
+    margin-left: 146px;
+    color: #ffffff;
+
+    h1 {
+        font-weight: 600;
+        font-size: 2rem;
+    }
+}
