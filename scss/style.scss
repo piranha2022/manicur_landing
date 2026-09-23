@@ -128,25 +128,26 @@ body {
     display: flex;
     flex-direction: column;
     max-width: 1920px;
-    width: 100%;
     margin: 0 auto;
-
     &_list {
-        display: grid;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
         margin-top: 60px;
-        width: 100%;
-        padding: 30px 10px 30px;
+        // width: 100%;
+        padding: 30px 80px 30px;
         justify-items: center;
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        gap: 10px;
+        // grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 40px;
 
         &_li {
             list-style: none;
-            width: 242px;
+            width: 180px;
             // height: 100px;
             text-align: left;
             border-bottom: 1px solid #767676;
             color: $color-accent;
+            align-self: center;
 
             p {
                 margin-top: 17px;
@@ -166,26 +167,25 @@ body {
     border-radius: 50px;
     text-align: center;
     align-self: center;
-
-    a {
-        color: #ffff;
-        text-decoration: none;
-        background: none;
-    }
-
+    color: #ffff;
+    text-decoration: none;
+    margin-left: 80px;
 }
 
+// check samles
 .check_samples {
     max-width: 1253px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 40px auto;
-    gap: 236px;
+    // gap: 236px;
 
     &_block {
         text-align: center;
         width: 265px;
         height: 278px;
+       margin: 0 auto;
 
         img {
             width: 143px;
@@ -212,13 +212,18 @@ body {
     margin: 146px auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 5px;
-    gap: 314px;
+   img{
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+   }
 
     .story_text {
         width: 401px;
-      margin-top: 110px;
-
+        margin-top: 110px;
+    margin: 0 auto;
         h2 {
             font-size: 40px;
             font-weight: 600;
