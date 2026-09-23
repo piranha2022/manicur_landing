@@ -1,12 +1,13 @@
 @import './base/variables';
 
-* {
+body {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
+    color: $font-text-primary;
+    background: $color-primary;
 }
 
 
@@ -29,15 +30,14 @@
     flex-direction: column;
     justify-content: space-between;
     max-width: 1920px;
-    height: 100vh;
-    background: $color-primary;
+    margin: 0 auto;
 }
 
 .heading_main {
     display: flex;
     justify-content: end;
     position: relative;
-    width: 100%;
+    // width: 100%;
 }
 
 .heading_img_hand {
@@ -70,6 +70,14 @@
     left: 30px;
     top: 200px;
 
+    &::before {
+        content: url(../img/head/nail_bg_dota.png);
+        margin-left: 120px;
+        position: absolute;
+        top: -222px;
+        left: -55px;
+    }
+
     &::after {
         content: url(../img/head/nail.png);
         margin-left: 120px;
@@ -98,7 +106,6 @@
     width: 100%;
     margin-left: 146px;
     z-index: 1;
-    // bottom: -80px;
     position: absolute;
     bottom: 0;
 }
@@ -112,5 +119,116 @@
     h1 {
         font-weight: 600;
         font-size: 2rem;
+
+    }
+}
+
+// Check
+.check {
+    display: flex;
+    flex-direction: column;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+
+    &_list {
+        display: grid;
+        margin-top: 60px;
+        width: 100%;
+        padding: 30px 10px 30px;
+        justify-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 10px;
+
+        &_li {
+            list-style: none;
+            width: 242px;
+            // height: 100px;
+            text-align: left;
+            border-bottom: 1px solid #767676;
+            color: $color-accent;
+
+            p {
+                margin-top: 17px;
+                margin-bottom: 6px;
+                color: $font-text-primary;
+            }
+        }
+    }
+}
+
+.btn {
+    list-style: none;
+    max-width: 220px;
+    background: $color-accent;
+    padding: 17px 55px;
+    cursor: pointer;
+    border-radius: 50px;
+    text-align: center;
+    align-self: center;
+
+    a {
+        color: #ffff;
+        text-decoration: none;
+        background: none;
+    }
+
+}
+
+.check_samples {
+    max-width: 1253px;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+    gap: 236px;
+
+    &_block {
+        text-align: center;
+        width: 265px;
+        height: 278px;
+
+        img {
+            width: 143px;
+            height: 163px;
+        }
+    }
+
+    .samples_text {
+        color: $font-text-primary;
+        margin-top: 25px;
+
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+    }
+}
+
+// Ouer story
+.story {
+    max-width: 1386px;
+    height: 790px;
+    margin: 146px auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    gap: 314px;
+
+    .story_text {
+        width: 401px;
+      margin-top: 110px;
+
+        h2 {
+            font-size: 40px;
+            font-weight: 600;
+            color: $color-accent;
+            margin-bottom: 25px;
+        }
+
+        h3 {
+            font-weight: 600;
+            margin-top: 25px;
+        }
     }
 }
