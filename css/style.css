@@ -6,6 +6,9 @@ body {
   color: #767676;
   background: #FCF8EF;
 }
+body h2 {
+  margin: 0;
+}
 
 .logo {
   font-family: "Great Vibes", cursive;
@@ -127,10 +130,16 @@ body {
   color: #D8B192;
   align-self: center;
 }
-.check_list_li p {
-  margin-top: 17px;
+.check_list p {
   margin-bottom: 6px;
   color: #767676;
+}
+
+.h2_block {
+  display: flex;
+}
+.h2_block img {
+  margin-right: 6px;
 }
 
 .btn {
@@ -145,6 +154,10 @@ body {
   color: white;
   text-decoration: none;
   margin-left: 80px;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  transform: scale(1.1);
 }
 
 .check_samples {

@@ -8,6 +8,10 @@ body {
     font-weight: 400;
     color: $font-text-primary;
     background: $color-primary;
+
+    h2{
+        margin: 0;
+    }
 }
 
 
@@ -149,14 +153,21 @@ body {
             color: $color-accent;
             align-self: center;
 
+            }
+
             p {
-                margin-top: 17px;
                 margin-bottom: 6px;
                 color: $font-text-primary;
             }
         }
     }
-}
+
+    .h2_block{
+        display: flex;
+        img{
+            margin-right: 6px;
+        }
+    }
 
 .btn {
     list-style: none;
@@ -170,6 +181,11 @@ body {
     color: #ffff;
     text-decoration: none;
     margin-left: 80px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+        transform: scale(1.1);
+    }
 }
 
 // check samles
